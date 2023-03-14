@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ReceptionistDashboardController">
+   <children>
+      <Button layoutX="42.0" layoutY="71.0" mnemonicParsing="false" onAction="#addpatientbuttion" prefHeight="58.0" prefWidth="125.0" text="Add Patient" />
+      <Button layoutX="126.0" layoutY="196.0" mnemonicParsing="false" onAction="#updateduesbutton" prefHeight="58.0" prefWidth="126.0" text="Update Dues " />
+      <Button layoutX="314.0" layoutY="196.0" mnemonicParsing="false" onAction="#addexpbutton" prefHeight="58.0" prefWidth="126.0" text="Add Expenses" />
+      <Button layoutX="191.0" layoutY="70.0" mnemonicParsing="false" onAction="#scheduleapppointmentbutton" prefHeight="58.0" prefWidth="188.0" text="Schedule Appointment" />
+      <Button layoutX="397.0" layoutY="70.0" mnemonicParsing="false" onAction="#addtestbutton" prefHeight="58.0" prefWidth="150.0" text="Add Test to Patient" />
+   </children>
+</AnchorPane>

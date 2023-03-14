@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="398.0" prefWidth="572.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DoctorupdateavailabilitysceneController">
+   <children>
+      <RadioButton fx:id="availableradbut" layoutX="229.0" layoutY="160.0" mnemonicParsing="false" text="Available" />
+      <RadioButton fx:id="notavailableradbut" layoutX="229.0" layoutY="208.0" mnemonicParsing="false" text="Not Available" />
+      <Label layoutX="182.0" layoutY="89.0" text="Select Avaiability Status">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="432.0" layoutY="265.0" mnemonicParsing="false" onAction="#saveOnclick" prefHeight="38.0" prefWidth="58.0" text="Save" />
+      <Button layoutX="81.0" layoutY="265.0" mnemonicParsing="false" onAction="#backOnclick" prefHeight="38.0" prefWidth="58.0" text="Back" />
+   </children>
+</AnchorPane>

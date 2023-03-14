@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="473.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AddpatientsceneController">
+   <children>
+      <TextField fx:id="patcontacttextfield" layoutX="290.0" layoutY="43.0" prefHeight="26.0" prefWidth="137.0" promptText="Contact" />
+      <TextField fx:id="pataddresstextfield" layoutX="42.0" layoutY="92.0" prefHeight="26.0" prefWidth="198.0" promptText="Address" />
+      <TextField fx:id="patagetextfield" layoutX="463.0" layoutY="43.0" prefHeight="26.0" prefWidth="98.0" promptText="Age" />
+      <TextField fx:id="patnametextfield" layoutX="42.0" layoutY="43.0" prefHeight="26.0" prefWidth="198.0" promptText="Patient Name" />
+      <Button layoutX="507.0" layoutY="133.0" mnemonicParsing="false" onAction="#addpatientonclick" prefHeight="34.0" prefWidth="53.0" text="ADD" />
+      <TableView fx:id="pattableview" layoutX="36.0" layoutY="203.0" prefHeight="186.0" prefWidth="529.0">
+        <columns>
+          <TableColumn fx:id="patidcol" prefWidth="119.20001602172852" text="ID" />
+          <TableColumn fx:id="patnamecol" prefWidth="211.1999969482422" text="Name" />
+            <TableColumn fx:id="patcontactcol" minWidth="0.0" prefWidth="196.0" text="Contact" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="168.0" text="Added Patients:" />
+      <ComboBox fx:id="patgendercombobox" layoutX="289.0" layoutY="92.0" prefHeight="26.0" prefWidth="138.0" promptText="Gender" />
+      <Button layoutX="36.0" layoutY="404.0" mnemonicParsing="false" onAction="#backonclick" prefHeight="26.0" prefWidth="60.0" text="Back" />
+   </children>
+</AnchorPane>

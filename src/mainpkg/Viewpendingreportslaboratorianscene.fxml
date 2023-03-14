@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ViewpendingreportslaboratoriansceneController">
+   <children>
+      <TableView fx:id="testtable" layoutX="34.0" layoutY="100.0" prefHeight="200.0" prefWidth="536.0">
+        <columns>
+            <TableColumn fx:id="testidcol" prefWidth="84.800048828125" text="Test ID" />
+          <TableColumn fx:id="testnamecol" prefWidth="215.199951171875" text="Test Name" />
+          <TableColumn fx:id="patidcol" prefWidth="112.79998779296875" text="Patient ID" />
+            <TableColumn fx:id="datecol" prefWidth="121.5999755859375" text="Date" />
+        </columns>
+      </TableView>
+      <Label fx:id="branchlabel" layoutX="34.0" layoutY="55.0" text="Pending Test Reports of X branch" />
+      <Label fx:id="text" layoutX="33.0" layoutY="303.0" textFill="#990000" />
+      <Button layoutX="514.0" layoutY="312.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="33.0" prefWidth="56.0" text="Back" />
+   </children>
+</AnchorPane>

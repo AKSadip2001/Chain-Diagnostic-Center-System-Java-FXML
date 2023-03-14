@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="466.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ViewStatisticalReportSceneManagerController">
+   <children>
+      <ComboBox fx:id="branchcombobox" layoutX="65.0" layoutY="40.0" prefWidth="150.0" promptText="Branch" />
+      <Button layoutX="248.0" layoutY="40.0" mnemonicParsing="false" onAction="#viewOnclick" text="View" />
+      <Button layoutX="65.0" layoutY="413.0" mnemonicParsing="false" onAction="#backonclick" prefHeight="26.0" prefWidth="59.0" text="Back" />
+      <BarChart fx:id="barchart" layoutX="65.0" layoutY="89.0" prefHeight="310.0" prefWidth="494.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" fx:id="xaxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yaxis" label="Value in TK" side="LEFT" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

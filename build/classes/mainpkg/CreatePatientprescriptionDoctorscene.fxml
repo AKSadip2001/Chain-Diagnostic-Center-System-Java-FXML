@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="515.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.CreatePatientprescriptionDoctorsceneController">
+   <children>
+      <TextField fx:id="patidfield" layoutX="73.0" layoutY="58.0" prefHeight="26.0" prefWidth="118.0" />
+      <Button layoutX="222.0" layoutY="58.0" mnemonicParsing="false" onAction="#searchPatonClick" text="Search" />
+      <Label layoutX="79.0" layoutY="27.0" text="Patient ID" />
+      <Label fx:id="searchresultinfo" layoutX="75.0" layoutY="105.0" text="//Search related info" />
+      <TextField fx:id="diseasenamefield" layoutX="73.0" layoutY="187.0" />
+      <TextField fx:id="mednamefield" layoutX="356.0" layoutY="187.0" />
+      <TextField fx:id="testnamefield" layoutX="71.0" layoutY="291.0" />
+      <Label layoutX="356.0" layoutY="160.0" text="Medicine Name:" />
+      <Label layoutX="73.0" layoutY="265.0" text="Test Name:" />
+      <Button layoutX="547.0" layoutY="187.0" mnemonicParsing="false" onAction="#addmedonclick" text="ADD MED" />
+      <Button layoutX="262.0" layoutY="291.0" mnemonicParsing="false" onAction="#addtestonclick" text="ADD TEST" />
+      <Button layoutX="568.0" layoutY="385.0" mnemonicParsing="false" onAction="#createpresOnclick" text="Create" />
+      <Button layoutX="71.0" layoutY="385.0" mnemonicParsing="false" onAction="#backOnclick" text="Back" />
+      <Label fx:id="mednamelabel" layoutX="356.0" layoutY="221.0" text="//medname" />
+      <Label fx:id="testnamelabel" layoutX="71.0" layoutY="328.0" text="//testname" />
+      <DatePicker fx:id="presdate" layoutX="431.0" layoutY="291.0" promptText="Date" />
+      <Label layoutX="73.0" layoutY="160.0" text="Disease Name:" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AddpatientTestsceneController">
+   <children>
+      <TextField fx:id="billduetextfield" layoutX="235.0" layoutY="166.0" prefHeight="34.0" prefWidth="138.0" promptText="Due Amount" />
+      <ComboBox fx:id="branchcombobox" layoutX="45.0" layoutY="66.0" prefHeight="34.0" prefWidth="150.0" promptText="Branch" />
+      <TextField fx:id="billamounttextfield" layoutX="46.0" layoutY="166.0" prefHeight="34.0" prefWidth="138.0" promptText="Bill Amount" />
+      <TextField fx:id="patidtextfield" layoutX="414.0" layoutY="66.0" prefHeight="34.0" prefWidth="138.0" promptText="Patient ID" />
+      <ComboBox fx:id="testcombobox" layoutX="234.0" layoutY="66.0" prefHeight="34.0" prefWidth="150.0" promptText="Test" />
+      <Label layoutX="46.0" layoutY="140.0" text="Bill" />
+      <Label layoutX="235.0" layoutY="140.0" text="Bill due" />
+      <Label layoutX="415.0" layoutY="140.0" text="Date" />
+      <Button fx:id="addtestbutton" layoutX="259.0" layoutY="243.0" mnemonicParsing="false" onAction="#addtestonclick" prefHeight="34.0" prefWidth="99.0" text="ADD TEST" />
+      <Label fx:id="confirmationlabel" layoutX="273.0" layoutY="285.0" />
+      <Button fx:id="addtestbutton1" layoutX="46.0" layoutY="246.0" mnemonicParsing="false" onAction="#backonclick" prefHeight="28.0" prefWidth="54.0" text="Back" />
+      <DatePicker fx:id="date" layoutX="410.0" layoutY="166.0" prefHeight="34.0" prefWidth="150.0" promptText="Test Date" />
+   </children>
+</AnchorPane>

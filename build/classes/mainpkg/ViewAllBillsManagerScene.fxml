@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="422.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ViewAllBillsManagerSceneController">
+   <top>
+      <AnchorPane prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="branchcombox" layoutX="31.0" layoutY="23.0" prefWidth="150.0" promptText="Branch" />
+            <ComboBox fx:id="billtypecombobox" layoutX="225.0" layoutY="24.0" prefWidth="150.0" promptText="Bill Type" />
+            <Button layoutX="439.0" layoutY="24.0" mnemonicParsing="false" onAction="#viewtblonclick" text="View" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="339.0" prefWidth="607.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="vbtable" layoutX="33.0" layoutY="7.0" prefHeight="278.0" prefWidth="534.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="vbbillidcol" prefWidth="128.0" text="Bill ID" />
+                  <TableColumn fx:id="doccol" prefWidth="166.39996337890625" text="Doctor" />
+                  <TableColumn fx:id="vbbillcol" prefWidth="132.800048828125" text="Bill" />
+                  <TableColumn fx:id="vddatecol" prefWidth="109.60003662109375" text="Date" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tbtable" layoutX="30.0" layoutY="13.0" prefHeight="267.0" prefWidth="533.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="tbbillidcol" prefWidth="114.39996337890625" text="Bill ID" />
+                  <TableColumn fx:id="tbtestnamecol" prefWidth="111.199951171875" text="Test Name" />
+                  <TableColumn fx:id="tbbillcol" prefWidth="108.800048828125" text="Bill" />
+                  <TableColumn fx:id="tbduecol" minWidth="0.0" prefWidth="102.4000244140625" text="Due" />
+                  <TableColumn fx:id="tbdatecol" prefWidth="94.39996337890625" text="Date" />
+               </columns>
+            </TableView>
+            <Button layoutX="33.0" layoutY="291.0" mnemonicParsing="false" onAction="#backonclick" prefHeight="27.0" prefWidth="53.0" text="Back" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>

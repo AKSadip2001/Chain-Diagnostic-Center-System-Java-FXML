@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.AppointmentproceduresceneController">
+   <children>
+      <Label layoutX="166.0" layoutY="64.0" text="DIAGNOSTIC CENTRE" textFill="#ec0000" underline="true">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="123.0" layoutY="149.0" text="For Appointment &amp; Emergency Services">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="177.0" layoutY="210.0" text="Call 24 Hours Hotline Number">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="271.0" layoutY="270.0" text="10606" textFill="#3061e7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="60.0" layoutY="328.0" mnemonicParsing="false" onAction="#backonclick" text="Back" />
+   </children>
+</AnchorPane>

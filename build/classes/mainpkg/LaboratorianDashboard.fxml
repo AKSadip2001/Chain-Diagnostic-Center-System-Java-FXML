@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="664.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.LaboratorianDashboardController">
+   <children>
+      <Button layoutX="369.0" layoutY="106.0" mnemonicParsing="false" onAction="#GenerateReportbutton" prefHeight="48.0" prefWidth="210.0" text="Generate Test Report" />
+      <Button layoutX="84.0" layoutY="264.0" mnemonicParsing="false" onAction="#CheckPendingTestReportsbutton" prefHeight="48.0" prefWidth="222.0" text="Check Pending Test Reports" />
+      <Button layoutX="369.0" layoutY="189.0" mnemonicParsing="false" onAction="#AddLaboratoryExpensesbutton" prefHeight="48.0" prefWidth="210.0" text="Add Laboratory Expenses" />
+      <Button layoutX="84.0" layoutY="106.0" mnemonicParsing="false" onAction="#ViewTestsListbutton" prefHeight="48.0" prefWidth="222.0" text="View Test List of Patients" />
+      <Button layoutX="84.0" layoutY="188.0" mnemonicParsing="false" onAction="#AcknowledgeSampleCollectionbutton" prefHeight="48.0" prefWidth="222.0" text="Update Test Status of Patient" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.GenerateReportLaboratorianController">
+   <children>
+      <TextField fx:id="patidtextfield" layoutX="103.0" layoutY="50.0" />
+      <TextField fx:id="testidtextfield" layoutX="325.0" layoutY="50.0" />
+      <TextArea fx:id="reportdestextarea" layoutX="41.0" layoutY="151.0" prefHeight="133.0" prefWidth="518.0" promptText="Report Description" />
+      <Label layoutX="103.0" layoutY="25.0" text="Patient ID" />
+      <Label layoutX="325.0" layoutY="25.0" text="Test ID" />
+      <Button layoutX="250.0" layoutY="101.0" mnemonicParsing="false" onAction="#addimgonclick" text="ADD Image" />
+      <Button layoutX="434.0" layoutY="308.0" mnemonicParsing="false" onAction="#generatereportonclick" text="Generate Report" />
+      <Button layoutX="62.0" layoutY="308.0" mnemonicParsing="false" onAction="#backonclick" text="Back" />
+   </children>
+</AnchorPane>

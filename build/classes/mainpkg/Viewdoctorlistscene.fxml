@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ViewdoctorlistsceneController">
+   <children>
+      <TableView fx:id="doctableview" layoutX="24.0" layoutY="48.0" prefHeight="282.0" prefWidth="550.0">
+        <columns>
+          <TableColumn fx:id="docnamecol" prefWidth="111.19997787475586" text="Doctor Name" />
+          <TableColumn fx:id="docspecialitycol" prefWidth="110.39996337890625" text="Speciality" />
+            <TableColumn fx:id="docbranchcol" prefWidth="104.00007629394531" text="Branch" />
+            <TableColumn fx:id="docvhcol" prefWidth="110.4000244140625" text="Visiting Hours" />
+            <TableColumn fx:id="docvdcol" prefWidth="120.0" text="Visiting Days" />
+        </columns>
+      </TableView>
+      <Button layoutX="24.0" layoutY="344.0" mnemonicParsing="false" onAction="#backonclick" prefHeight="35.0" prefWidth="66.0" text="Back" />
+   </children>
+</AnchorPane>

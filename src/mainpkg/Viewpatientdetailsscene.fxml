@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.ViewpatientdetailssceneController">
+   <children>
+      <GridPane layoutX="77.0" layoutY="118.0" prefHeight="269.0" prefWidth="420.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="62.799993896484374" minHeight="10.0" prefHeight="39.600006103515625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="85.20001831054688" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.8000244140625" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="77.00000610351563" minHeight="10.0" prefHeight="47.99998779296874" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="117.60000610351562" minHeight="10.0" prefHeight="108.00001220703126" valignment="TOP" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Patient Name:">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="27.0" text="Patient Gender:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="80.0" text="Patient Age:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="27.0" text="Patient Contact:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="10.0" layoutY="185.0" prefHeight="39.0" prefWidth="119.0" text="Patient Address:" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="patnamelabel" layoutX="10.0" layoutY="20.0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="patagelabel" layoutX="229.0" layoutY="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="patgenderlabel" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="patcontactlabel" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="pataddlabel" prefHeight="40.0" prefWidth="210.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Label layoutX="77.0" layoutY="24.0" text="Enter Patient ID:" />
+      <TextField fx:id="patidtextfield" layoutX="77.0" layoutY="51.0" prefHeight="26.0" prefWidth="145.0" />
+      <Button layoutX="274.0" layoutY="51.0" mnemonicParsing="false" onAction="#searchonclick" text="Search" />
+      <Button layoutX="523.0" layoutY="331.0" mnemonicParsing="false" onAction="#backonclick" text="Back" />
+   </children>
+</AnchorPane>

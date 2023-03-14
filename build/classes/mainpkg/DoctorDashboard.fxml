@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="449.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainpkg.DoctorDashboardController">
+   <children>
+      <Button layoutX="119.0" layoutY="96.0" mnemonicParsing="false" onAction="#checkappointmentsbutton" prefHeight="54.0" prefWidth="170.0" text="Check Appointments" />
+      <Button layoutX="361.0" layoutY="139.0" mnemonicParsing="false" onAction="#updateavailabilitystatusbutton" prefHeight="54.0" prefWidth="196.0" text="Update Availability Status" />
+      <Button layoutX="361.0" layoutY="247.0" mnemonicParsing="false" onAction="#checkcommisionsbutton" prefHeight="54.0" prefWidth="196.0" text="Check Commisions" />
+      <Button layoutX="119.0" layoutY="193.0" mnemonicParsing="false" onAction="#checkpatientdetailsbutton" prefHeight="54.0" prefWidth="170.0" text="Check Patient Details" />
+      <Button layoutX="119.0" layoutY="291.0" mnemonicParsing="false" onAction="#generateprescriptionbutton" prefHeight="54.0" prefWidth="170.0" text="Generate Prescription" />
+   </children>
+</AnchorPane>
